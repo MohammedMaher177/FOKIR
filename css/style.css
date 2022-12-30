@@ -89,13 +89,24 @@ nav ul a:active {
   clear: both;
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   nav ul li {
     display: block;
     opacity: 0.4;
   }
-}
+} */
 
+@media screen and (max-width: 992px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 1200px) {
   nav {
     width: 90%;
@@ -415,10 +426,11 @@ nav ul a:active {
 }
 @media screen and (min-width: 0px) and (max-width: 1200px) {
   .about-container {
-    width: 100%;
+    width: 70%;
     padding: 10px;
-    margin-left: 0;
-    margin-right: 0;
+    /* margin-left: 0;
+    margin-right: 0; */
+    margin: auto;
     box-sizing: border-box;
     display: list-item;
   }
@@ -427,8 +439,9 @@ nav ul a:active {
     margin: auto;
   }
   .about-img {
-    width: 80%;
+    width: 60%;
     border: none;
+    margin: auto;
     margin-bottom: 20px;
   }
 
